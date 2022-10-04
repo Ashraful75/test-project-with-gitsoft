@@ -1,0 +1,131 @@
+/* 
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --whitebg: #ffffff;
+    --graybg: #F0F4F5;
+    --primarybg: #00A0F9;
+    --maincolor: #0E006F;
+    --textcolor: #6C757D;
+    --secoundtextcolor: #00A0F9;
+}
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+/* 
+1. Header
+2. Hero section
+3. Services Seciton
+*/
+
+
+/* Header area style start */
+#home {
+	position: fixed;
+	width: 100%;
+	background: var(--whitebg);
+	text-align: left;
+	z-index: 999;
+    padding: 5px 0;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .25);
+}
+#home .logo {
+	color: var(--secoundtextcolor);
+	font-size: 40px;
+	font-weight: 700;
+    margin-left: 16px;
+}
+nav {
+	text-align: left;
+	position: absolute;
+	top: 100%;
+	background: var(--whitebg);
+	width: 100%;
+	box-shadow: 0px 6px 9px -10px rgba(0, 0, 0, .25);
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+nav ul li a {
+    color: var(--maincolor);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav ul li a:hover {
+    color: var(--secoundtextcolor);
+}
+.toggle_nav:checked ~ nav {
+    display: none;
+}
+.toggle_nav {
+    display: none;
+}
+.toggle_nav_label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	margin-right: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.toggle_nav_label span, 
+.toggle_nav_label span::before,
+.toggle_nav_label span::after {
+    position: relative;
+    height: 2px;
+    border-radius: 2px;
+    width: 30px;
+    background-color: var(--primarybg);
+    display: block;
+}
+.toggle_nav_label span::before,
+.toggle_nav_label span::after {
+    position: absolute;
+    content: "";
+}
+.toggle_nav_label span::before {
+    bottom: 7px;
+}
+.toggle_nav_label span::after {
+    top: 7px;
+}
+
+
+/* Start Hero Section style   */
+
+main {
+  overflow: hidden;
+}
+.hero-area {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 15px;
+    margin-top: 50px;
+  }
+
+  .hero-right img {
+	width: 60%;
+}
+.hero-right {
+	text-align: center;
+}
